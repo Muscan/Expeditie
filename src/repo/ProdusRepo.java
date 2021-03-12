@@ -21,4 +21,6 @@ public class ProdusRepo implements Repository<Produs>{
     public List<Produs> findAll() {
         return this.produse;
     }
+
+
 }
