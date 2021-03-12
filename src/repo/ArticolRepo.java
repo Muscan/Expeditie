@@ -1,24 +1,22 @@
 package repo;
-
-import model.Produs;
-
+import model.Articol;
 import java.util.List;
 
-public class ArticolRepo implements Repository<Produs>{
-    private List<Produs> produse;
+public class ArticolRepo implements Repository<Articol>{
+    private List<Articol> articole;
 
     @Override
-    public void save(Produs entity) {
-        this.produse.add(entity);
+    public void save(Articol entity) {
+        this.articole.add(entity);
     }
 
     @Override
     public int count() {
-        return this.produse.size();
+        return this.articole.size();
     }
 
     @Override
-    public List<Produs> findAll() {
-        return this.produse;
+    public List<Articol> findAll() {
+        return this.articole;
     }
 }
