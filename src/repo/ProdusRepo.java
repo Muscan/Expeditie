@@ -19,6 +19,7 @@ public class ProdusRepo implements Repository<Produs>{
 
     @Override
     public List<Produs> findAll() {
+
         return this.produse;
     }
 
