@@ -9,7 +9,6 @@ public class Produs {
     this.nume = nume;
     this.cantitate = cantitate;
     }
-
     public String getNume() {
         return nume;
     }
