@@ -1,7 +1,5 @@
 package repo;
-
 import model.Alpinist;
-
 import java.util.List;
 
 public class AlpinistRepo implements Repository<Alpinist>{

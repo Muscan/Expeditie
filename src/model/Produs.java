@@ -1,5 +1,4 @@
 package model;
-
 public class Produs {
 
     private String nume;

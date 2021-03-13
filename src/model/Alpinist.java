@@ -25,5 +25,4 @@ public class Alpinist {
         this.articol = articol;
     }
 
-
 }

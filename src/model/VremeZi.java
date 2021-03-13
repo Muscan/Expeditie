@@ -1,6 +1,5 @@
 package model;
 import java.time.LocalDate;
-
 public class VremeZi {
 
     private LocalDate data;

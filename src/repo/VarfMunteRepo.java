@@ -17,5 +17,4 @@ public class VarfMunteRepo implements Repository<VarfMunte>{
     public List<VarfMunte> findAll() {
         return this.varfMunti;
     }
-
 }

@@ -1,8 +1,8 @@
 package model;
-
 import java.util.List;
 
 public class VarfMunte {
+
     private String nume;
     private int inaltime;
     private List<VremeZi> vremeZile;
@@ -36,4 +36,5 @@ public class VarfMunte {
     public void setVremeZile(List<VremeZi> vremeZile) {
         this.vremeZile = vremeZile;
     }
+
 }
