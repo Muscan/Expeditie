@@ -1,5 +1,4 @@
 package model;
-
 public class Articol {
 
     private String nume;
