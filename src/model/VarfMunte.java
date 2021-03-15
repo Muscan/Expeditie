@@ -17,20 +17,19 @@ public class VarfMunte {
         return nume;
     }
 
-    public void setNume(String nume) {
-        this.nume = nume;
-    }
-
     public int getInaltime() {
         return inaltime;
     }
 
-    public void setInaltime(int inaltime) {
-        this.inaltime = inaltime;
-    }
-
     public List<VremeZi> getVremeZile() {
         return vremeZile;
+    }
+    public void setNume(String nume) {
+        this.nume = nume;
+    }
+
+    public void setInaltime(int inaltime) {
+        this.inaltime = inaltime;
     }
 
     public void setVremeZile(List<VremeZi> vremeZile) {

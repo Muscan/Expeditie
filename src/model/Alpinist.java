@@ -12,18 +12,20 @@ public class Alpinist {
     public List<Produs> getProduse() {
         return produse;
     }
-
-    public void setProduse(List<Produs> produse) {
-        this.produse = produse;
-    }
-
     public List<Articol> getArticol() {
         return articol;
     }
 
+    public void setProduse(List<Produs> produse) {
+        this.produse = produse;
+    }
     public void setArticol(List<Articol> articol) {
         this.articol = articol;
     }
+
+
+
+
 
 
 }
