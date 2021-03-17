@@ -1,4 +1,5 @@
 package main;
+import enums.VarfMunteEnum;
 import model.*;
 import repo.TRepo;
 
@@ -19,6 +20,8 @@ public class Main {
         Articol bocanci = new Articol("Bocanci de tura ");
         Produs batoane = new Ambalate("Caloric100% ", 2);
         VremeZi v1 = new VremeZi(LocalDate.of(2021, 3,17),5);
+        VarfMunte m1 = new VarfMunte(VarfMunteEnum.Moldoveanu, 2450);
+        VarfMunte m2 = new VarfMunte(VarfMunteEnum.Vladeasa, 2200);
 
         //Initializez si declar un Repo de obiecte de tip produs
         TRepo<Produs> ProdusRepo = new TRepo<Produs>();
@@ -47,22 +50,12 @@ public class Main {
         for (VremeZi v: VremeZiRepo.findAll()){
             System.out.println(v);
         }
+        TRepo<VarfMunte> VarfMunte = new TRepo<VarfMunte>();
+        m1.addVremeZi(v1);
+        VarfMunte.save(m1);
 
-
-       /* List<Produs> produse = new ArrayList<>();
-
-        produse.add(apa);
-        produse.add(conservaLegume);
-
-        List<Articol> articole = new ArrayList<>();
-        articole.add(rucsac);
-
-
-        for(Produs produs: produse){
-            System.out.println(produs);
+        for (VarfMunte vf: VarfMunte.findAll()){
+            System.out.println(vf);
         }
-
-        for(Articol articol: articole)
-            System.out.println(articol);*/
     }
 }
