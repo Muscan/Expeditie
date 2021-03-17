@@ -25,4 +25,12 @@ public class VremeZi {
     public void setTemperatura(double temperatura) {
         this.temperatura = temperatura;
     }
+
+    @Override
+    public String toString() {
+        return "VremeZi{" +
+                "data=" + data +
+                ", temperatura=" + temperatura +
+                '}';
+    }
 }
