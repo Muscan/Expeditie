@@ -1,5 +1,5 @@
 package model;
-public class Articol {
+public class Articol extends Entity {
 
     private String nume;
 

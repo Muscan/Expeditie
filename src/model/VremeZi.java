@@ -1,6 +1,6 @@
 package model;
 import java.time.LocalDate;
-public class VremeZi {
+public class VremeZi extends Entity {
 
     private LocalDate data;
     private double temperatura;

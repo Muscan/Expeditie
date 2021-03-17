@@ -1,7 +1,7 @@
 package model;
 import java.util.List;
 
-public class Alpinist {
+public class Alpinist extends Entity {
     private List<Produs> produse;
     private List<Articol> articol;
 

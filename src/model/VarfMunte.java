@@ -4,7 +4,7 @@ import enums.VarfMunteEnum;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VarfMunte {
+public class VarfMunte extends Entity{
 
     private VarfMunteEnum nume;
     private int inaltime;

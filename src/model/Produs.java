@@ -1,5 +1,5 @@
 package model;
-public class Produs {
+public class Produs extends Entity {
 
     private String nume;
     private int cantitate;
