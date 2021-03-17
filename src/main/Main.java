@@ -1,5 +1,4 @@
 package main;
-
 import model.*;
 import repo.TRepo;
 
@@ -50,9 +49,7 @@ public class Main {
         }
 
 
-
        /* List<Produs> produse = new ArrayList<>();
-
 
         produse.add(apa);
         produse.add(conservaLegume);
