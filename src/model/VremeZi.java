@@ -1,11 +1,12 @@
 package model;
 import java.time.LocalDate;
-public class VremeZi extends Entity {
+public class VremeZi extends Entity<Long> {
 
     private LocalDate data;
     private double temperatura;
 
-    public VremeZi(LocalDate data, double temperatura) {
+    public VremeZi(Long id, LocalDate data, double temperatura) {
+        super(id);
         this.data = data;
         this.temperatura = temperatura;
     }

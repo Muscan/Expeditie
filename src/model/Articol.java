@@ -1,9 +1,10 @@
 package model;
-public class Articol extends Entity {
+public class Articol extends Entity<Long> {
 
     private String nume;
 
-    public Articol(String nume) {
+    public Articol(Long id, String nume) {
+        super(id);
         this.nume = nume;
     }
 

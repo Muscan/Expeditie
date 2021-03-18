@@ -4,19 +4,21 @@ import enums.VarfMunteEnum;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VarfMunte extends Entity{
+public class VarfMunte extends Entity<Long>{
 
     private VarfMunteEnum nume;
     private int inaltime;
     private List<VremeZi> vremeZile;
 
-    public VarfMunte(VarfMunteEnum nume, int inaltime) {
+    public VarfMunte(Long id, VarfMunteEnum nume, int inaltime) {
+        super(id);
         this.nume = nume;
         this.inaltime = inaltime;
         this.vremeZile = new ArrayList<>();
     }
 
-    public VarfMunte(VarfMunteEnum nume, int inaltime, List<VremeZi> vremeZile) {
+    public VarfMunte(Long id, VarfMunteEnum nume, int inaltime, List<VremeZi> vremeZile) {
+        super(id);
         this.nume = nume;
         this.inaltime = inaltime;
         this.vremeZile = vremeZile;

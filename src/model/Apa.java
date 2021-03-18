@@ -1,8 +1,8 @@
 package model;
 
 public class Apa extends Produs {
-    public Apa(String nume, int cantitate) {
-        super(nume, cantitate);
+    public Apa(Long id, String nume, int cantitate) {
+        super(id, nume, cantitate);
     }
 
     @Override

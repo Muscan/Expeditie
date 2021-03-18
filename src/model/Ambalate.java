@@ -2,8 +2,8 @@ package model;
 
 public class Ambalate extends Produs {
 
-    public Ambalate(String nume, int cantitate) {
-        super(nume, cantitate);
+    public Ambalate(Long id, String nume, int cantitate) {
+        super(id, nume, cantitate);
     }
 
     @Override
