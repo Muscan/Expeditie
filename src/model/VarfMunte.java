@@ -1,19 +1,36 @@
 package model;
+import enums.VarfMunteEnum;
+
+import java.util.ArrayList;
 import java.util.List;
 
-public class VarfMunte {
+public class VarfMunte extends Entity<Long>{
 
-    private String nume;
+    private VarfMunteEnum nume;
     private int inaltime;
     private List<VremeZi> vremeZile;
 
-    public VarfMunte(String nume, int inaltime, List<VremeZi> vremeZile) {
+    public VarfMunte(Long id, VarfMunteEnum nume, int inaltime) {
+        super(id);
+        this.nume = nume;
+        this.inaltime = inaltime;
+        this.vremeZile = new ArrayList<>();
+    }
+
+    public VarfMunte(Long id, VarfMunteEnum nume, int inaltime, List<VremeZi> vremeZile) {
+        super(id);
         this.nume = nume;
         this.inaltime = inaltime;
         this.vremeZile = vremeZile;
     }
 
-    public String getNume() {
+    public void addVremeZi(VremeZi vremeZi)
+    {
+        this.vremeZile.add(vremeZi);
+    }
+    // o metoda ce adauga o VremeZi in lista de vremezile
+
+    public VarfMunteEnum getNume() {
         return nume;
     }
 
@@ -24,7 +41,7 @@ public class VarfMunte {
     public List<VremeZi> getVremeZile() {
         return vremeZile;
     }
-    public void setNume(String nume) {
+    public void setNume(VarfMunteEnum nume) {
         this.nume = nume;
     }
 
@@ -34,6 +51,15 @@ public class VarfMunte {
 
     public void setVremeZile(List<VremeZi> vremeZile) {
         this.vremeZile = vremeZile;
+    }
+
+    @Override
+    public String toString() {
+        return "VarfMunte{" +
+                "nume=" + nume +
+                ", inaltime=" + inaltime +
+                ", vremeZile=" + vremeZile +
+                '}';
     }
 
 }

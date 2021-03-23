@@ -1,11 +1,13 @@
 package model;
 import java.util.List;
 
-public class Alpinist {
+public class Alpinist extends Entity<Long> {
     private List<Produs> produse;
     private List<Articol> articol;
 
-    public Alpinist(List<Produs> produse, List<Articol> articol) {
+    public Alpinist(Long id, List<Produs> produse, List<Articol> articol) {
+
+        super(id);
         this.produse = produse;
         this.articol = articol;
     }
@@ -24,5 +26,4 @@ public class Alpinist {
     public void setArticol(List<Articol> articol) {
         this.articol = articol;
     }
-
 }

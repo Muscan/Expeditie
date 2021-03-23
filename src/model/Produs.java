@@ -1,13 +1,19 @@
 package model;
-public class Produs {
+public class Produs extends Entity<Long> {
 
     private String nume;
     private int cantitate;
 
-    Produs(String nume, int cantitate) {
-    this.nume = nume;
-    this.cantitate = cantitate;
+    Produs(Long id, String nume, int cantitate) {
+        super(id);
+        this.nume = nume;
+        this.cantitate = cantitate;
     }
+
+    public Produs() {
+        super();
+    }
+
     public String getNume() {
         return nume;
     }
