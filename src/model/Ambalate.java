@@ -6,8 +6,9 @@ public class Ambalate extends Produs {
         super(id, nume, cantitate);
     }
 
+
     @Override
     public String toString() {
-        return "Conserva (Nume: " + this.getNume() + ", Cantitate: " + this.getCantitate() + " bucati)";
+        return "Ambalate(Nume: " + this.getNume() + ", Cantitate: " + this.getCantitate() + " bucati)";
     }
 }

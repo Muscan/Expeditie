@@ -9,6 +9,11 @@ public class Produs extends Entity<Long> {
         this.nume = nume;
         this.cantitate = cantitate;
     }
+
+    public Produs() {
+        super();
+    }
+
     public String getNume() {
         return nume;
     }

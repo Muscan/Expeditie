@@ -7,6 +7,10 @@ public class Entity<ID> {
         this.id = id;
     }
 
+    public Entity() {
+
+    }
+
     public ID getId() {
         return id;
     }

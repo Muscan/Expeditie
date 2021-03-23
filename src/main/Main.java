@@ -1,6 +1,7 @@
 package main;
 import enums.VarfMunteEnum;
 import model.*;
+import repo.FileRepoAmbalate;
 import repo.FileRepoApa;
 import repo.TRepo;
 
@@ -60,20 +61,39 @@ public class Main {
 //        }
 
         // OBIECTE DE TIPUL APA + SCRIS IN FISIER
-        Apa apa1 = new Apa(1L, "Dorna", 4);
+      /*  Apa apa1 = new Apa(1L, "Dorna", 4);
         Apa apa2 = new Apa(2L, "Bucovina", 3);
         Apa apa3 = new Apa(5L, "Perla", 100);
-        FileRepoApa fileRepoApa = new FileRepoApa("ape.txt");
-        fileRepoApa.addApa(apa1);
-        fileRepoApa.addApa(apa2);
-        fileRepoApa.addApa(apa3);
-         fileRepoApa.write();
+        FileRepoApa fileRepoApaScriere = new FileRepoApa("ape.txt");
+        fileRepoApaScriere.addApa(apa1);
+        fileRepoApaScriere.addApa(apa2);
+        fileRepoApaScriere.addApa(apa3);
+        fileRepoApaScriere.write();
 
-        FileRepoApa fileRepoApa2 = new FileRepoApa("ape.txt");
+        FileRepoApa fileRepoApaCitire = new FileRepoApa("ape.txt");
 
-        //fileRepoApa2.read();
+        for(Apa apa: fileRepoApaCitire.getApe())
+            System.out.println(apa);*/
 
-        for(Apa apa: fileRepoApa2.getApe())
-            System.out.println(apa);
+
+        // Adaugare obiecte de tipul ambalate in fisier/sau scriere
+        Ambalate ciocolata = new Ambalate(1L, "Milka", 10);
+        Ambalate ciocolata1 = new Ambalate(4L, "Baton", 9);
+        Ambalate ciocolata2 = new Ambalate(2L, "Glucoza", 32);
+
+        FileRepoAmbalate fileRepoWriteAmbalate = new FileRepoAmbalate("ambalate.txt");
+        fileRepoWriteAmbalate.addAmbalate(ciocolata);
+        fileRepoWriteAmbalate.addAmbalate(ciocolata1);
+        fileRepoWriteAmbalate.addAmbalate(ciocolata2);
+        fileRepoWriteAmbalate.write();
+
+        FileRepoAmbalate fileRepoReadAmbalate = new FileRepoAmbalate("ambalate.txt");
+
+        for(Ambalate ambalate: fileRepoReadAmbalate.getAmbalate())
+            System.out.println(ambalate);
     }
+
 }
+
+//ToDo
+//Alpinist, Articol, Produs, VarfMunte,VremeZi

@@ -6,6 +6,7 @@ public class Alpinist extends Entity<Long> {
     private List<Articol> articol;
 
     public Alpinist(Long id, List<Produs> produse, List<Articol> articol) {
+
         super(id);
         this.produse = produse;
         this.articol = articol;
